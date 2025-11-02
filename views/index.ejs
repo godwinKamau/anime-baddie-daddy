@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rouge+Script&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/1e82a588cf.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="big-container">
+        <section class="daddy-maker">
+            <section class="title">
+                <h1>Anime Baddie-Daddy Ranker</h1>
+            </section>
+            <form action="/postdaddy" method="POST">
+                <section class="name">
+                    <label for="input_name">Who's Your Daddy?</label>
+                    <input type="text" id="input_name" name="name" placeholder="title">
+                </section>
+                <section class="hotlink">
+                    <label for="url">Show Us a Picture:</label>
+                    <input type="text" id="url" name="url" placeholder="url">
+                </section>
+                <section class="desc">
+                    <label for="description">What makes him bad?</label>
+                    <textarea id="description" name="description" placeholder="Enter a description of your daddy." rows=10 cols=60></textarea> 
+                </section>
+                <button type="submit">Show Off Your Dad-Bod!</button>
+            </form>
+            <section class="big-preview">
+                <section>
+                    <h3>Preview Here</h3>
+                </section>
+                <section>
+                    <img id="preview" src="">
+                </section>
+                <section>
+                    <h4></h4>
+                </section>
+            </section>
+        
+        </section>
+        <section class="daddy-climber">
+            
+            <section class="dungeon">
+                <section class="title">
+                    Dungeon
+                </section>
+                <ul>
+                    <li><% for(let i=0;i<villians.length;i++) {%>
+                            <% if(villians[i].score >= 15) {%>
+                                <img class ="display" src="<%=villians[i].url %>">
+                            <% } %>
+                        <% } %>
+                    </li>
+                </ul>
+            </section>
+            <section class="delicious">
+                <section class="title">
+                    Delicious
+                </section>
+                <ul>
+                    <li><% for(let i=0;i<villians.length;i++) {%>
+                            <% if(villians[i].score <= 14 && villians[i].score >= 5) {%>
+                                <img class ="display" src="<%=villians[i].url %>">
+                            <% } %>
+                        <% } %>
+                    </li>
+                </ul>
+            </section>
+            <section class="complex">
+                <section class="title">
+                    Complex
+                </section>
+                <ul>
+                    <li><% for(let i=0;i<villians.length;i++) {%>
+                            <% if(villians[i].score <= 4 && villians[i].score >= -5) {%>
+                                <img class ="display" src="<%=villians[i].url %>">
+                            <% } %>
+                        <% } %>
+                    </li>
+                </ul>
+            </section>
+            <section class="has-issues">
+                <section class="title">
+                    Has Issues
+                </section>
+                <ul>
+                    <li><% for(let i=0;i<villians.length;i++) {%>
+                            <% if(villians[i].score <= -6 && villians[i].score >= -10) {%>
+                                <img class ="display" src="<%=villians[i].url %>">
+                            <% } %>
+                        <% } %>
+                    </li>
+                </ul>
+            </section>
+            <section class="not-my-dad">
+                <section class="title">
+                    Not My Dad
+                </section>
+                <ul>
+                    <li><% for(let i=0;i<villians.length;i++) {%>
+                            <% if(villians[i].score <= -11) {%>
+                                <img class ="display" src="<%=villians[i].url %>">
+                            <% } %>
+                        <% } %>
+                    </li>
+                </ul>
+            </section>
+        </section>
+        <section class="zoomify">
+            <span><i class="fa fa-thumbs-up" aria-hidden="true"></i></span>
+            <span><i class="fa fa-thumbs-down" aria-hidden="true"></i></span>
+            <span><i class="fa fa-trash" aria-hidden="true"></i></span>
+        </section>
+    </section>
+    <script type="text/javascript" src="main.js"></script>
+</body>
+</html>

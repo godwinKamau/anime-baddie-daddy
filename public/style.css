@@ -1,0 +1,221 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+* {
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+:root{
+    --background:#0D0B03;
+    --brown:#26200D;
+    --grey:#D1C8BD;
+    --dred:#730707;
+    --rose:#D30808;
+}
+
+body{
+    height:100vh;
+}
+
+.big-container{
+    background: black;
+    width:100%;
+    height:100%;
+    max-height: fit-content;
+    display:grid;
+    grid-template-columns: 30% 50% 20%;
+}
+
+.daddy-maker{
+    padding:10px;
+    background:var(--brown);
+    border:1px dotted gray;
+}
+
+.daddy-climber{
+    border:1px dotted yellow;
+}
+
+.display{
+    width:150px;
+    height:200px;
+}
+
+.title {
+    width:100%;
+    height:70px;
+    border-radius:20px;
+    padding:50px 0;
+    color:#D1C8BD;
+    font-family: 'Rouge Script',monospace;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    font-size:3rem;
+    padding-bottom:4px;
+}
+
+form{
+    color:var(--grey);
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 10px;
+}
+
+form section{
+    width:100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    gap:10px;
+    padding:5px 0;
+}
+
+form section:nth-of-type(3){
+    padding-top:10px;
+    flex-direction: column;
+}
+
+input[type="text"]{
+    width:50%;
+}
+
+h3,h4{
+    color:var(--background);
+}
+
+h3{
+    font-family: 'Rouge Script';
+}
+
+.big-preview{
+    height:50%;
+    width:100%;
+    background:var(--dred);
+    display:grid;
+    grid-template-rows: 15% 50% 30%;
+}
+
+.big-preview section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.big-preview h3 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    background-color:#ae0a0a;
+    border-radius: 10px;
+    padding:5px;
+}
+
+.big-preview img{
+    height:100%;
+    object-fit: cover;
+}
+
+.daddy-climber{
+    background: url('pexels-iriser-1122639.jpg');
+    background-size: cover;
+    color:var(--grey);
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    gap:5px;
+}
+
+.daddy-climber section{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    gap:5px;
+}
+
+.daddy-climber section section{
+    writing-mode: sideways-lr;
+    text-orientation: mixed;
+}
+
+.daddy-climber .title {
+    width:2.2rem;
+    height: 100%;
+    border:3px ridge var(--rose);
+    border-radius: 0;
+}
+
+.dungeon{
+    background:#ae0a0aBB;
+    font-size: 2rem;
+}
+
+.delicious{
+    background: #730707BB;
+    font-size: 2rem;
+}
+
+.complex{
+    background: #D1C8BDaa;
+    font-size: 2rem;
+    
+}
+
+.has-issues{
+    background: rgba(214, 111, 146,50%);
+    font-size: 1.5rem;
+}
+
+.not-my-dad{
+    background: #26200Daa;
+    font-size: 1.2rem;
+}
