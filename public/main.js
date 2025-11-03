@@ -9,3 +9,18 @@ document.querySelector('#input_name').addEventListener('input', () => daddyName.
 const daddyDesc = document.querySelector('h4')
 const description = document.querySelector('#description')
 document.querySelector('#description').addEventListener('input', () => daddyDesc.innerText = description.value)
+
+console.log(villians)
+
+const displays = document.querySelectorAll('.display')
+Array.from(displays).forEach((picture) => {
+    picture.addEventListener('click',() => {
+        document.querySelector('#zoomedPic').src = picture.src
+        const villian = villians.find((object) => 
+            object.url===picture.src
+        )
+        document.querySelector('#zoomedName').innerText = villian.name
+        document.querySelector('#zoomedDesc').innerText = villian.description
+    })
+})
+

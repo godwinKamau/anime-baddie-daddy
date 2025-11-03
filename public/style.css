@@ -200,22 +200,53 @@ h3{
 }
 
 .delicious{
-    background: #730707BB;
+    background: #a10a0abb;
     font-size: 2rem;
 }
 
 .complex{
-    background: #D1C8BDaa;
+    background: #730707BB;
     font-size: 2rem;
     
 }
 
 .has-issues{
-    background: rgba(214, 111, 146,50%);
+    background: #560606bb;
     font-size: 1.5rem;
 }
 
 .not-my-dad{
-    background: #26200Daa;
+    background: #230202bb;
     font-size: 1.2rem;
 }
+
+.zoomify {
+    background-color: #D1C8BD;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:5px;
+}
+
+#zoomedName {
+    font-size: 3rem;
+    padding: 1rem;
+}
+
+.zoomify img{
+    height:400px;
+    width:250px;
+}
+
+.icons{
+    display: flex;
+    width:100%;
+    justify-content: space-evenly;
+}
+
+.icons span{
+    font-size: 2.5rem;
+    border: 1px solid black;
+    padding:2rem;
+}
+
