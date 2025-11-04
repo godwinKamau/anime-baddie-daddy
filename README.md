@@ -1,5 +1,5 @@
 # Anime Baddie Daddy Rating App
-<hr>
+
 A full-stack web app to rate anime “baddie daddies” 🥷🔥 and rank them based on community scores.
 Users get a live preview of characters and rankings update dynamically.
 All data is stored in MongoDB, making the app scalable for future character additions and features.
