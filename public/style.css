@@ -194,6 +194,20 @@ h3{
     border-radius: 0;
 }
 
+/* Learned this blur trick from Mojtaba Seyedi:https://codepen.io/seyedi/pen/RwdrMYw */
+.tier-list:has(img:hover) img:not(:hover) {
+  filter: blur(4px);
+}
+
+.tier-list img{
+    scale:100%;
+    transition:scale ease .5s
+}
+
+.tier-list img:hover{
+    scale: 110%;
+}
+
 .dungeon{
     background:#ae0a0aBB;
     font-size: 2rem;
@@ -221,16 +235,35 @@ h3{
 }
 
 .zoomify {
-    background-color: #D1C8BD;
+    padding:15px 5%;
+    background: url('pexels-iriser-1122639.jpg');
+    background-size: contain;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap:5px;
 }
 
+.name-container{
+    height:150px;
+    width:100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(#9c958d66,#cac1b788);
+    border-radius: 10px;
+}
+
 #zoomedName {
     font-size: 3rem;
     padding: 1rem;
+    text-align: center;
+    color: var(--brown);
+}
+
+.invisible{
+    opacity: 0;
+    transition:opacity .7s;
 }
 
 .zoomify img{
@@ -239,14 +272,41 @@ h3{
 }
 
 .icons{
+    padding:20px 10px;
+    background: linear-gradient(#cac1b788,var(--dred));
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
     display: flex;
     width:100%;
     justify-content: space-evenly;
 }
 
 .icons span{
-    font-size: 2.5rem;
+    font-size: 2.2rem;
     border: 1px solid black;
-    padding:2rem;
+    background-color: transparent;
+    padding:1.5rem;
+    transition:background-color 1s ease;
 }
 
+.icons span:hover{
+    background-color: #D1C8BD;
+}
+
+.desc-container{
+    background:linear-gradient(var(--dred)0%,var(--dred)60%,var(--brown));
+    height:300px;
+    width:100%;
+    padding:5px 3px;
+}
+
+#zoomedDesc{
+    font-size:1.5rem;
+    color:var(--grey);
+    text-align: center;
+}
+
+/* Fade in Transition */
+.fadeInTransition{
+    opacity:1;
+}

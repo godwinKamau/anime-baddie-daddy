@@ -53,7 +53,7 @@
                 <section class="title">
                     Dungeon
                 </section>
-                <ul>
+                <ul class="tier-list">
                     <li><% for(let i=0;i<villians.length;i++) {%>
                             <% if(villians[i].score >= 15) {%>
                                 <img class ="display" src="<%=villians[i].url %>">
@@ -66,7 +66,7 @@
                 <section class="title">
                     Delicious
                 </section>
-                <ul>
+                <ul class="tier-list">
                     <li><% for(let i=0;i<villians.length;i++) {%>
                             <% if(villians[i].score <= 14 && villians[i].score >= 5) {%>
                                 <img class ="display" src="<%=villians[i].url %>">
@@ -79,7 +79,7 @@
                 <section class="title">
                     Complex
                 </section>
-                <ul>
+                <ul class="tier-list">
                     <li><% for(let i=0;i<villians.length;i++) {%>
                             <% if(villians[i].score <= 4 && villians[i].score >= -5) {%>
                                 <img class ="display" src="<%=villians[i].url %>">
@@ -92,7 +92,7 @@
                 <section class="title">
                     Has Issues
                 </section>
-                <ul>
+                <ul class="tier-list">
                     <li><% for(let i=0;i<villians.length;i++) {%>
                             <% if(villians[i].score <= -6 && villians[i].score >= -10) {%>
                                 <img class ="display" src="<%=villians[i].url %>">
@@ -105,7 +105,7 @@
                 <section class="title">
                     Not My Dad
                 </section>
-                <ul>
+                <ul class="tier-list">
                     <li><% for(let i=0;i<villians.length;i++) {%>
                             <% if(villians[i].score <= -11) {%>
                                 <img class ="display" src="<%=villians[i].url %>">
@@ -116,14 +116,21 @@
             </section>
         </section>
         <section class="zoomify">
-            <h3 id="zoomedName"></h3>
-            <img id="zoomedPic">
+            <section class="name-container">
+                <h3 id="zoomedName">Click a Baddie/Daddy to Preview Here!</h3>
+            </section>
+            <section class="pic-container invisible">
+                <img id="zoomedPic">
+            </section>
+            
             <section class="icons">
                 <span><i class="fa fa-thumbs-up" aria-hidden="true"></i></span>
                 <span><i class="fa fa-thumbs-down" aria-hidden="true"></i></span>
                 <span><i class="fa fa-trash" aria-hidden="true"></i></span>
             </section>
-            <p id="zoomedDesc"></p>
+            <section class="desc-container">
+                <p id="zoomedDesc"></p>
+            </section>
         </section>
     </section>
     <script type="text/javascript" src="main.js"></script>
