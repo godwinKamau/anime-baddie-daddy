@@ -48,7 +48,7 @@ npm run dev
 This runs the server using nodemon for automatic reload during development.
 <hr>
 
-## ✨ Features
+## Features
 
 - Submit and rate anime “baddie daddy” characters
 - Live preview of characters
