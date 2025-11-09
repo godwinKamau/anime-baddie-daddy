@@ -39,6 +39,7 @@ module.exports = function(app,db) {
 
     app.post('/deleteVillian', async(req,res) => {
         let villian = await Villian.findOneAndDelete({name:req.body.name})
+        console.log(villian)
         res.send({'redirect':'/'})
     })
 }
