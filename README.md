@@ -16,8 +16,12 @@ All data is stored in MongoDB, making the app scalable for future character addi
 
 <hr>
 
+<img src="./Screenshot 2025-11-09 at 1.20.16 PM.png">
+
+<hr>
 ## Live Demo
-🔗 https://anime-baddie-daddy.onrender.com/
+
+https://anime-baddie-daddy.onrender.com/
 
 <hr>
 
